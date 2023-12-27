@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">detectGas</string>
+    <string name="default_notification_channel_id">my_channel_id</string>
+    <string name="default_notification_channel_name">my_channel_name</string>
+    <string name="default_notification_importance">my_notification_importance</string>
+    <string name="default_notification_enable_vibration">my_notification_enable_vibration</string>
+    <string name="default_notification_vibration_duration">my_notification_vibration_duration</string>
+    <string name="default_notification_group">my_notification_group</string>
+    <string name="default_notification_channel_description">my_notification_channel_description</string>
+    <string name="default_notification_channel_enable_vibration">my_notification_channel_enable_vibration</string>
+
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- Bảng giám sát -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/monitor_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bảng giám sát"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/monitor_title"
+                android:background="#000000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_temp"
+                        android:layout_width="42dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/thermometer"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_temp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/red"
+                        android:text="Nhiệt độ " />
+
+                    <TextView
+                        android:id="@+id/temperature_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/text_temperature"
+                        android:layout_alignParentRight="true"
+                        android:text="0°C"
+                        android:textColor="@color/red" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_humi"
+                        android:layout_width="42dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/humidity"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_humi"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/blue"
+                        android:text="Độ ẩm " />
+
+                    <TextView
+                        android:id="@+id/humidity_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_humi"
+                        android:layout_alignBaseline="@+id/text_humidity"
+                        android:layout_alignParentRight="true"
+                        android:text="0%"
+                        android:textColor="@color/blue" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_gas"
+                    android:layout_width="42dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/gas"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_gas"
+                    android:layout_alignParentLeft="true"
+                    android:text="Nồng độ gas " />
+
+                <TextView
+                    android:id="@+id/gas_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_gas"
+                    android:layout_alignParentRight="true"
+                    android:text="0 ppm" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/control_table"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_alignParentLeft="true">
+
+            <!-- Tiêu đề bảng điều khiển -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+
+                <TextView
+                    android:id="@+id/control_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Bảng điều khiển"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/control_title"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/control_title"
+                    android:layout_marginTop="16dp"
+                    android:text="Chế độ điều khiển tay"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <!-- Textview cửa -->
+
+                <!-- Textview quạt -->
+                <ImageView
+                    android:id="@+id/door"
+                    android:layout_width="72dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/manual"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/window"
+                    android:textSize="18sp" />
+
+                <!-- Hình ảnh quạt -->
+                <ImageView
+                    android:id="@+id/fan"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/door"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/fan"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fan"
+                    android:layout_marginTop="10dp"
+                    android:text="Chế độ điều tự động"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/manual_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/manual"
+                    android:layout_alignParentEnd="true"
+                    android:textOff="Đóng"
+                    android:textOn="Mở"
+                    android:layout_alignParentRight="true" />
+
+                <!-- Swich cửa -->
+
+                <!-- Swich quạt -->
+
+                <Switch
+                    android:id="@+id/fan_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/auto_switch"
+                    android:layout_alignBaseline="@id/fan"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="41dp"
+                    android:textOff="Đóng"
+                    android:textOn="Mở"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp" />
+
+
+                <!--            Switch của cửa khi bình thường đang đóng-->
+
+
+                <Switch
+                    android:id="@+id/door_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/auto_switch"
+                    android:layout_alignBaseline="@id/door"
+                    android:layout_marginEnd="-45dp"
+                    android:layout_marginBottom="124dp"
+                    android:layout_toStartOf="@+id/manual_switch"
+                    android:textOff="Tắt"
+                    android:textOn="Bật"
+                    android:layout_marginRight="-45dp"
+                    android:layout_toLeftOf="@+id/manual_switch" />
+
+                <Switch
+                    android:id="@+id/auto_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/auto"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="6dp"
+                    android:textOff="Đóng"
+                    android:textOn="Mở"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/auto_switch"
+                    android:layout_marginTop="17dp"
+                    android:text="Nồng độ Gas"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/auto_switch"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

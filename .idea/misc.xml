@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.106" />
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/drawable-v24/rounded_corners.xml" value="0.1" />
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17" />
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/layout/activity_dangky.xml" value="0.18" />
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Do an 4/detectGas2/app/src/main/res/layout/testnewgraphic.xml" value="0.22" />
+        <entry key="..\:/Users/Lenovo/DA Quang/DA5/app/src/main/res/layout/activity_hien_thi_cai_dat.xml" value="0.2" />
+        <entry key="..\:/Users/Lenovo/DA Quang/DA5/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/DA Quang/DA5/app/src/main/res/layout/activity_set_up_rau.xml" value="0.25" />
+        <entry key="..\:/Users/Lenovo/DA Quang/DA5/app/src/main/res/layout/testnewgraphic.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <EditText
+
+        android:id="@+id/dktaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập tên người dùng "
+        android:lines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+
+        android:id="@+id/dkmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập mật khẩu "
+        android:lines="1"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginRight="30dp"
+            android:text="HỦY"
+            android:backgroundTint="@color/red_white"
+            android:backgroundTintMode="screen"
+            android:textColor="@color/black"
+            android:id="@+id/huydk"
+            android:background="@drawable/rounded_corners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="ĐỒNG Ý"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/green"
+            android:backgroundTintMode="screen"
+            android:id="@+id/dongydk"
+            android:background="@drawable/rounded_corners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
